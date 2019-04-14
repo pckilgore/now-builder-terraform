@@ -15,7 +15,6 @@
   "scripts": {
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
-    "precommit": "lint-staged",
     "test": "jest"
   },
   "lint-staged": {
@@ -47,5 +46,10 @@
     "jest": "^24.7.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
