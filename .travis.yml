@@ -7,8 +7,8 @@ branches:
   only:
     - master
 before_install:
-  - mkdir .now
-  - echo "{\"token\":\"$NOW_TOKEN\"}" >> $HOME/.now/auth.json
+  - mkdir $HOME/.now
+  - echo "{\"token\":\"$NOW_TOKEN\"}" > $HOME/.now/auth.json
 install:
   - "yarn --prefer-offline"
 cache:
