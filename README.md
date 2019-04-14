@@ -6,7 +6,9 @@ Uses terraform@0.11.13
 
 ## Example
 
-> See [Taken from this fixture](test/fixtures/01-build-success)
+> [This code is based on this fixture](test/fixtures/01-build-success)
+
+### /now.json
 
 ```json
 {
@@ -21,6 +23,8 @@ Uses terraform@0.11.13
   "builds": [{ "src": "index.tf", "use": "@pckilgore/now-builder-terraform" }]
 }
 ```
+
+### /infrastructure.tf
 
 ```terraform
 variable "AWS_ACCESS_KEY_ID" {}
