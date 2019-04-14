@@ -7,7 +7,7 @@ language: node_js
 #   only: 
 #     - master
 install: 
-  - yarn --prefer-offline
+  - "yarn --prefer-offline"
 cache: 
   directories: 
     - .yarn-local-mirror
