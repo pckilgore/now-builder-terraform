@@ -1,16 +1,16 @@
 language: node_js
 node_js:
   - "8"
-# dist: trusty
-# sudo: false
-# branches:
-#   only:
-#     - master
-# install:
-#   - "yarn --prefer-offline"
-# cache:
-#   directories:
-#     - .yarn-local-mirror
+dist: trusty
+sudo: false
+branches:
+  only:
+    - master
+install:
+  - "yarn --prefer-offline"
+cache:
+  directories:
+    - .yarn-local-mirror
 # email:
 #   on_failure: change
 #   on_success: never
