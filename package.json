@@ -7,6 +7,20 @@
   "publishConfig": {
     "access": "public"
   },
+  "bugs": {
+    "url": "https://github.com/pckilgore/now-builder-terraform/issues"
+  },
+  "keywords": [
+    "ci",
+    "now",
+    "now.sh",
+    "now v2",
+    "zeit",
+    "builder",
+    "serverless",
+    "terraform"
+  ],
+  "homepage": "https://github.com/pckilgore/now-builder-terraform",
   "main": "src/index.js",
   "files": [
     "src/index.js",
@@ -14,13 +28,13 @@
   ],
   "scripts": {
     "lint": "eslint ./ --ignore-path .gitignore",
-    "lint-fix": "npm run lint -- --fix",
+    "lint-fix": "yarn run lint -- --fix",
     "test": "jest"
   },
   "lint-staged": {
     "*.{js,jsx}": [
       "prettier --write",
-      "npm run lint-fix",
+      "yarn run lint-fix",
       "git add"
     ],
     "*.{css,scss,json,md}": [

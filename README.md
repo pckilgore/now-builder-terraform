@@ -1,4 +1,6 @@
-# :city_sunrise: now-builder-terraform
+# :city_sunrise: now-terraform
+
+[![Status](https://travis-ci.org/rstacruz/REPO.svg?branch=master)](https://travis-ci.com/pckilgore/now-builder-terraform)[![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://npmjs.org/package/@pckilgore/now-terraform "View this project on npm")
 
 Deploy your infrastructure using now.sh builders.
 
