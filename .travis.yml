@@ -1,15 +1,18 @@
 language: node_js
-  node_js: 
-    - lts
-dist: trusty # uses trusty environment
-sudo: false # when on trusty, uses Docker containers for speed
-branches: 
-  only: 
+node_js:
+  - "8"
+dist: trusty
+sudo: false
+branches:
+  only:
     - master
-install: 
-  - yarn --prefer-offline
-cache: 
-  directories: 
+before_install:
+  - mkdir $HOME/.now
+  - echo "{\"token\":\"$NOW_TOKEN\"}" > $HOME/.now/auth.json
+install:
+  - "yarn --prefer-offline"
+cache:
+  directories:
     - .yarn-local-mirror
 email:
   on_failure: change
