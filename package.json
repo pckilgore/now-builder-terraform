@@ -1,7 +1,12 @@
 {
   "name": "@pckilgore/now-terraform",
+  "author": "Patrick C. Kilgore",
   "version": "0.2.13",
   "description": "A now.sh builder for terraform.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "src/index.js",
   "files": [
     "src/index.js",
@@ -24,8 +29,6 @@
       "git add"
     ]
   },
-  "author": "Patrick C. Kilgore",
-  "license": "MIT",
   "dependencies": {
     "execa": "^1.0.0",
     "node-fetch": "^2.3.0",
