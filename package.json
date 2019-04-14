@@ -1,7 +1,7 @@
 {
   "name": "@pckilgore/now-terraform",
   "author": "Patrick C. Kilgore",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A now.sh builder for terraform.",
   "license": "MIT",
   "publishConfig": {
