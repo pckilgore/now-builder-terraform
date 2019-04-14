@@ -3,8 +3,14 @@ language: node_js
     - lts
 dist: trusty # uses trusty environment
 sudo: false # when on trusty, uses Docker containers for speed
+branches: 
+  only: 
+    - master
 install: 
   - yarn --prefer-offline
+cache: 
+  directories: 
+    - .yarn-local-mirror
 email:
   on_failure: change
   on_success: never
