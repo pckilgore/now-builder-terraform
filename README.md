@@ -1,4 +1,4 @@
-# now-builder-terraform
+# :city_sunrise: now-builder-terraform
 
 Deploy your infrastructure using now.sh builders.
 
