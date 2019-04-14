@@ -1,7 +1,12 @@
 {
   "name": "@pckilgore/now-terraform",
+  "author": "Patrick C. Kilgore",
   "version": "0.2.13",
   "description": "A now.sh builder for terraform.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "src/index.js",
   "files": [
     "src/index.js",
@@ -10,7 +15,6 @@
   "scripts": {
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
-    "precommit": "lint-staged",
     "test": "jest"
   },
   "lint-staged": {
@@ -24,8 +28,6 @@
       "git add"
     ]
   },
-  "author": "Patrick C. Kilgore",
-  "license": "MIT",
   "dependencies": {
     "execa": "^1.0.0",
     "node-fetch": "^2.3.0",
@@ -44,5 +46,10 @@
     "jest": "^24.7.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
