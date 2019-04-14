@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "TF_VAR_AWS_ACCESS_KEY_ID": "@citrus_tech_aws_access_key_id",
+      "TF_VAR_AWS_SECRET_ACCESS_KEY": "@citrus_tech_aws_secret_access_key",
+      "TF_VAR_REGION": "us-east-2"
+    }
+  },
+  "builds": [{ "src": "index.tf", "use": "@pckilgore/now-builder-terraform" }]
+}
