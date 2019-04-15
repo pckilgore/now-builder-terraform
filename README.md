@@ -17,9 +17,17 @@ Uses terraform@0.11.13
   "version": 2,
   "build": {
     "env": {
-      "TF_VAR_AWS_ACCESS_KEY_ID": "@your_secret",
-      "TF_VAR_AWS_SECRET_ACCESS_KEY": "@your_secret",
-      "TF_VAR_REGION": "us-east-1"
+      "TF_VAR_AWS_ACCESS_KEY_ID": "@your_secret_1",
+      "TF_VAR_AWS_SECRET_ACCESS_KEY": "@your_secret_2",
+      "TF_VAR_REGION": "us-east-1",
+      /**
+       * The keys below may seem duplicative, but are read by `terraform init`
+       * when setting up a remote backend (which you should be using).
+       * They are hard coded by terraform by provider (the example below is AWS)
+       */
+
+      "AWS_ACCESS_KEY_ID": "@your_secret_1",
+      "AWS_SECRET_ACCESS_KEY": "@your_secret_2"
     }
   },
   "builds": [{ "src": "index.tf", "use": "@pckilgore/now-builder-terraform" }]
