@@ -4,7 +4,8 @@
 
 Deploy your infrastructure using now.sh builders.
 
-Uses terraform@0.11.13
+Uses terraform@0.11.13 
+Test
 
 ## Example
 
